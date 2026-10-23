@@ -17,5 +17,13 @@ public class SumOfThreeNumbers {
         System.out.println("The sum of the numbers is " + (first + second + third));
 
         System.out.println("The product of the numbers is " + (first * second * third));
+
+        // we need to create a new variable for storing number with decimals.
+        // it won't work if the divider is 3 instead of 3.0.
+        // if it is 3, only the integer answer will be returned although "double" variable is used.
+
+        double value = (first + second + third) / 3.0;
+
+        System.out.printf("The average of the numbers is %.8f" , value);
     }
 }
